@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-
+#!/usr/bin/env zsh
+# 使用zsh
 set -o noclobber -o noglob -o nounset -o pipefail
 IFS=$'\n'
 
@@ -123,8 +123,10 @@ handle_image() {
     ## rendered from vector graphics. If the conversion program allows
     ## specifying only one dimension while keeping the aspect ratio, the width
     ## will be used.
-    local DEFAULT_SIZE="1920x1080"
+    ## local DEFAULT_SIZE="1920x1080"
 
+    ## local DEFAULT_SIZE="2560x1918"
+    local DEFAULT_SIZE="3000x1918"
     local mimetype="${1}"
     case "${mimetype}" in
         ## SVG
